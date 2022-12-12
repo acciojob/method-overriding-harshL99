@@ -1,7 +1,7 @@
 package com.driver;
 
 class A{
-    public String Meth(){
+    public String meth(){
         return "Invoking method from class A";
     }
 }
@@ -9,10 +9,10 @@ class A{
 class B extends A{
 
     public void callAMeth(){
-        super.Meth();
+        super.meth();
     }
     @Override
-    public String Meth(){
+    public String meth(){
         return "Method is overridden in Extendend class B";
     }
 }
@@ -21,6 +21,6 @@ public class Main {
    public static void main(String[] args){
        B b=new B();
        b.callAMeth();
-       b.Meth();
+       b.meth();
    }
 }
